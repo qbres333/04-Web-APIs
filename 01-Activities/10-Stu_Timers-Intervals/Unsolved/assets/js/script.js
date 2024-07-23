@@ -12,8 +12,16 @@ function countdown() {
   const timeInterval = setInterval(function () {
     //
     // YOUR CODE HERE
-    //
-  });
+    timeLeft--;
+    timerEl.textContent = timeLeft;
+    if(timeLeft === 0) {
+      // Stops execution of action at set interval
+      clearInterval(timeInterval);
+      // call function to display individual words
+      displayMessage();
+    }
+    
+  },1000);
 }
 
 // Displays the message one word at a time
