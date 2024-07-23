@@ -19,6 +19,7 @@ if (
   tag.textContent = `This was made via prompts. It's a ${tagName}.`;
 
   // Appends tag as child of document body
+  // literally adding the element to the body
   document.body.appendChild(tag);
 }
 

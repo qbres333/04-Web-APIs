@@ -2,13 +2,18 @@ const site1El = document.querySelector('.site1');
 const site2El = document.querySelector('.site2');
 const site3El = document.querySelector('.site3');
 
+// sets the first element of the .site1 class, h4, to "Site 1"
 site1El.children[0].textContent = 'Site 1';
+// sets the 2nd element of the .site1 class, anchor element href, to a website
 site1El.children[1].setAttribute('href', 'https://google.com');
+// sets the 3rd element of the .site1 class, img, to an image
 site1El.children[1].children[0].setAttribute(
   'src',
   'assets/images/image_1.jpg'
 );
+// sets 2nd child's (href) 1st child (alt text) 
 site1El.children[1].children[0].setAttribute('alt', 'man working');
+// appears to be padding the 2nd child's (href) 1st child (alt text) 
 site1El.children[1].children[0].setAttribute('style', 'padding:10px;');
 
 site2El.children[0].textContent = 'Site 2';
@@ -30,7 +35,7 @@ site3El.children[1].children[0].setAttribute('alt', 'women working');
 site3El.children[1].children[0].setAttribute('style', 'padding:10px;');
 
 // Write Your Code Below
-const h4instance = document.querySelector('h4');
+const h4instance = document.querySelectorAll('h4');
 for(let i = 0; i < h4instance.length; i++) {
     // add styling to h4 here
     h4instance[i].setAttribute('style', `color: blue; font-size: 30px; padding-left: 10px; margin: 0`);
