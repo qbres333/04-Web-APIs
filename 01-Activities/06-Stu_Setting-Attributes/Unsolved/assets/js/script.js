@@ -2,7 +2,20 @@ const site1El = document.querySelector('.site1');
 const site2El = document.querySelector('.site2');
 const site3El = document.querySelector('.site3');
 
-// sets the first element of the .site1 class, h4, to "Site 1"
+
+/*
+ -Sets the first element of the .site1 class, h4, to "Site 1"
+ -When setting the textContent, be specific about which element
+ you're choosing. If there are descendents, all the descendents'
+ values will be set as well.
+
+ // Get the text content
+console.log(element.textContent);
+
+// Set the text content
+element.textContent = "New text content";
+*/
+
 site1El.children[0].textContent = 'Site 1';
 // sets the 2nd element of the .site1 class, anchor element href, to a website
 site1El.children[1].setAttribute('href', 'https://google.com');
@@ -11,6 +24,7 @@ site1El.children[1].children[0].setAttribute(
   'src',
   'assets/images/image_1.jpg'
 );
+
 // sets 2nd child's (href) 1st child (alt text) 
 site1El.children[1].children[0].setAttribute('alt', 'man working');
 // appears to be padding the 2nd child's (href) 1st child (alt text) 
@@ -22,6 +36,7 @@ site2El.children[1].children[0].setAttribute(
   'src',
   'assets/images/image_2.jpg'
 );
+
 site2El.children[1].children[0].setAttribute('alt', 'group brainstorm');
 site2El.children[1].children[0].setAttribute('style', 'padding:10px;');
 
@@ -38,6 +53,7 @@ site3El.children[1].children[0].setAttribute('style', 'padding:10px;');
 const h4instance = document.querySelectorAll('h4');
 for(let i = 0; i < h4instance.length; i++) {
     // add styling to h4 here
-    h4instance[i].setAttribute('style', `color: blue; font-size: 30px; padding-left: 10px; margin: 0`);
+    h4instance[i].setAttribute('style', 
+      `color: blue; font-size: 30px; padding-left: 10px; margin: 0`);
  
 }

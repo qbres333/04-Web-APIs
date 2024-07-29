@@ -14,5 +14,11 @@ console.log(document.body.children[1].children[0]);
 const firstChildUl = document.getElementById('first-child-ul');
 console.log(firstChildUl);
 
+const secChildUl = document.getElementById('second-child-ul');
+const thirdChildUl = document.getElementById('third-child-ul')
+
 // Setting style of element
-firstChildUl.style.color = 'green';
+firstChildUl.style.color = 'orange';
+secChildUl.style.color = 'violet';
+thirdChildUl.style.color = 'gold';
+

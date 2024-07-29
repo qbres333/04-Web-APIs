@@ -1,4 +1,6 @@
-// Stores user response in variable
+/* Stores user response in variable
+-'enter tag' is the placeholder text, parameter #2 */
+
 const tagName = prompt(
   'Please enter an HTML Tag (ex. h1, h2, p, div):',
   'enter tag'
@@ -20,6 +22,7 @@ if (
 
   // Appends tag as child of document body
   // literally adding the element to the body
+  // document.[element to append to].appendChild(variable created above)
   document.body.appendChild(tag);
 }
 
@@ -44,3 +47,4 @@ if (nextTag === true) {
     document.body.appendChild(secondTag);
   }
 }
+// this code only allows you to create 2 tags i.e. 2 new elements

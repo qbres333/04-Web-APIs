@@ -1,3 +1,5 @@
+/* entire page body is built with Javascript */
+
 const body = document.body;
 const h1El = document.createElement('h1');
 const infoEl = document.createElement('div');
@@ -14,10 +16,18 @@ const li3 = document.createElement('li');
 const li4 = document.createElement('li');
 
 h1El.textContent = 'Welcome to my page';
-kittenEl.textContent = 'This is my kitten 🐱.';
-nameEl.textContent = 'His name is Jax.';
-favoriteEl.textContent = 'My favorite foods are:';
+h1El.setAttribute('style', 'margin:auto; width:50%; text-align:center;');
 
+kittenEl.textContent = 'This is my kitten 🐱.';
+kittenEl.setAttribute('style', 'font-size:25px; text-align:center;');
+
+nameEl.textContent = 'His name is Jax.';
+nameEl.setAttribute('style', 'font-size:25px; text-align:center;');
+
+favoriteEl.textContent = 'My favorite foods are:';
+favoriteEl.setAttribute('style', 'font-size:20px;');
+
+// you can append items before setting their style/content
 body.appendChild(h1El);
 body.appendChild(infoEl);
 infoEl.appendChild(imgEl);
@@ -27,12 +37,12 @@ body.appendChild(favoriteEl);
 // Append ordered list
 favoriteEl.appendChild(listEl);
 
-h1El.setAttribute('style', 'margin:auto; width:50%; text-align:center;');
+// set style/content of appended elements
 infoEl.setAttribute('style', 'margin:auto; width:50%; text-align:center;');
 imgEl.setAttribute('src', 'http://placekitten.com/200/300');
-nameEl.setAttribute('style', 'font-size:25px; text-align:center;');
-kittenEl.setAttribute('style', 'font-size:25px; text-align:center;');
-favoriteEl.setAttribute('style', 'font-size:20px;');
+
+
+
 
 // TODO: Add ordered list items containing four favorite foods
 li1.textContent = 'lasagna';
