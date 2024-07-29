@@ -17,6 +17,12 @@ signUpButton.addEventListener('click', function (event) {
 
   // TODO: Set new submission to local storage
   localStorage.setItem('signUp', JSON.stringify(signUp));
-  
+  /** setItem
+  Syntax: localStorage.setItem(key, value)
+
+  key: A string representing the name of the key to store the 
+    value under.
+  value: The value to be stored. This can be any data type, 
+    but it will be converted to a string before being stored. */
 
 });

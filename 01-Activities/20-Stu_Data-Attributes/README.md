@@ -23,6 +23,14 @@ The following image demonstrates the web application's appearance and functional
 How can we use the `dataset` object to access an element's data attributes?
 
 The dataset object is a property of the Element interface that provides read/write access to these custom data attributes.
+Data attribute names starting with data- are converted to camelCase when accessed through the dataset object.
+You can use both dot notation and bracket notation to access data attributes.
+The dataset object is dynamic, meaning you can add or remove attributes as needed.
+
+Data attribute values are always strings.   
+You can use hasOwnProperty to check if a specific data attribute exists.
+Be mindful of potential browser compatibility issues with older browsers.
+By using the dataset object, you can effectively store and retrieve custom data associated with elements in your HTML
 
 ## 🏆 Bonus
 

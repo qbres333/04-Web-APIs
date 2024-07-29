@@ -3,6 +3,7 @@ const grade = document.getElementById('grades');
 const comment = document.getElementById('msg');
 const saveButton = document.getElementById('save');
 
+// save object locally
 saveButton.addEventListener('click', function (event) {
   event.preventDefault();
 
@@ -16,6 +17,7 @@ saveButton.addEventListener('click', function (event) {
   renderMessage();
 });
 
+// render message after clicking "Save"
 function renderMessage() {
   const lastGrade = JSON.parse(localStorage.getItem('studentGrade'));
   if (lastGrade !== null) {

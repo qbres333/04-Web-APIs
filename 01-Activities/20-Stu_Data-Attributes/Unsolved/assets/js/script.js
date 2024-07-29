@@ -9,10 +9,12 @@ container.addEventListener('click', function (event) {
     //print to see
     console.log('element', element);
     // Get the current value of the image's data-state attribute
-    const state = element.getAttribute('data-state'); //I added this
-    const imgValue = element.getAttribute('data-state'); //I added this
+    const state = element.getAttribute('data-state'); // my code here
+    const imgValue = element.getAttribute('data-state'); // my code here
     
-    console.log(imgValue); //I added this
+    
+    // console.log(imgValue); // my code here
+    console.log(element.dataset.number); // an alternative to creating a const and using getAttribute
 
     if (state === 'hidden') {
       //see the state

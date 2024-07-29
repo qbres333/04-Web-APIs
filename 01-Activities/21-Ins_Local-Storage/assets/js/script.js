@@ -9,15 +9,15 @@ counter.textContent = count;
 addButton.addEventListener('click', function () {
   if (count < 24) {
     count++;
-    counter.textContent = count; //this receives the value of the count
-    localStorage.setItem('count', count);
+    counter.textContent = count; //this receives the value of the counter
+    localStorage.setItem('count', count); //stores count locally
   }
 });
 
 subtractButton.addEventListener('click', function () {
   if (count > 0) {
     count--;
-    counter.textContent = count;
-    localStorage.setItem('count', count);
+    counter.textContent = count; //this receives the value of the counter
+    localStorage.setItem('count', count); //stores count locally
   }
 });
