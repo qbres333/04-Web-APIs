@@ -3,6 +3,7 @@ function keydownAction(event) {
   document.querySelector("#status").textContent = "KEYDOWN Event";
   const key = event.key.toLowerCase();
   document.querySelector("#key").textContent = event.key;
+  // why didn't we use the querySelector outside of the function?
   
 }
 

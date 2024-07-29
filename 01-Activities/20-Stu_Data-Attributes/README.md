@@ -22,6 +22,8 @@ The following image demonstrates the web application's appearance and functional
 
 How can we use the `dataset` object to access an element's data attributes?
 
+The dataset object is a property of the Element interface that provides read/write access to these custom data attributes.
+
 ## 🏆 Bonus
 
 If you have completed this activity, work through the following challenge with your partner to further your knowledge:

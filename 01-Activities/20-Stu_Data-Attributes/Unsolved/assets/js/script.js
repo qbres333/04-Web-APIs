@@ -9,8 +9,10 @@ container.addEventListener('click', function (event) {
     //print to see
     console.log('element', element);
     // Get the current value of the image's data-state attribute
+    const state = element.getAttribute('data-state'); //I added this
+    const imgValue = element.getAttribute('data-state'); //I added this
     
-    console.log('number', dataNumber);
+    console.log(imgValue); //I added this
 
     if (state === 'hidden') {
       //see the state
@@ -29,7 +31,7 @@ container.addEventListener('click', function (event) {
       // Change the attributes back to hidden
       element.setAttribute('data-state', 'hidden');
 
-      // change textConent back to empty string
+      // change textContent back to empty string
       element.textContent = '';
     }
   }

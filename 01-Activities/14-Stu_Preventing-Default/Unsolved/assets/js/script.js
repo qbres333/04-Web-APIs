@@ -23,4 +23,5 @@ function addTip(event) {
   document.querySelector('#new-total').textContent = newTotal.toFixed(2);
 }
 
+// the 2nd arg "addTip" seems to be a function call
 submitEl.addEventListener('click', addTip);

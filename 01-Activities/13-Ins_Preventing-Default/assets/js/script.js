@@ -3,11 +3,11 @@ const nameInput = document.querySelector('#name');
 const emailInput = document.querySelector('#email');
 const submissionResponseEl = document.querySelector('#response');
 
-// Action to be performed on click store in named function
+// Action to be performed on click, store in named function
 function showResponse(event) {
   // Prevent default action
   event.preventDefault();
-  console.log(event);
+  console.log(event); //why?? is this just a check?
   const response =
     'Thank you for your submission ' +
     nameInput.value +
