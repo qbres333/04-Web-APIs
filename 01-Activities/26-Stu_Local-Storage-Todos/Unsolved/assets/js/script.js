@@ -8,13 +8,15 @@ let todos = [];
 // TODO: What is the purpose of this function?
 // showing the todo entry in a table on the webpage
 function renderTodos() {
-  // TODO: Describe the functionality of the following two lines of code.
-  // defaults list to empty string; list starts blank, and every entry adds a line to the to-do list
+  /** TODO: Describe the functionality of the following two lines of code.
+   defaults list to empty string; list starts blank, and every 
+   entry adds a line to the to-do list */
   todoList.innerHTML = '';
   todoCountSpan.textContent = todos.length; //shows the count of to-do items
 
-  // TODO: Describe the functionality of the following `for` loop.
-  // add the to-do to the list as you enter them (for every existing to-do, we create a list item with an index)
+  /** TODO: Describe the functionality of the following `for` loop.
+   add the to-do to the list as you enter them (for every 
+   existing to-do, we create a list item with an index) */
   for (let i = 0; i < todos.length; i++) {
     const todo = todos[i];
 
