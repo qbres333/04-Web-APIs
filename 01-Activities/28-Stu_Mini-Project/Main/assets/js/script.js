@@ -6,7 +6,8 @@ const addTextBtn = document.querySelector('#add-text');
 const textInput = document.querySelector('#text-input');
 const clearBtn = document.querySelector('#clear-all');
 
-// ? We need to keep track of the elements that are added to the mood board and their positions
+/* ? We need to keep track of the elements that are added to the 
+ mood board and their positions */
 let tempStorageObject = {
   images: [],
   text: [],
@@ -15,18 +16,22 @@ let tempStorageObject = {
 // ? We neet to keep track of the current element that is being dragged
 let currentElement = null;
 
-// ? We create an event listener for the clear button. This will clear the mood board and the local storage.
+/* ? We create an event listener for the clear button. This will 
+ clear the mood board and the local storage. */
 clearBtn.addEventListener('click', function () {
   localStorage.clear();
   window.location.reload();
 });
 
-// ? Function to update local storage. This function will be called after a new element is added to the mood board and the tempStorageObject is updated.
+/* ? Function to update local storage. This function will be called 
+ after a new element is added to the mood board and the 
+ tempStorageObject is updated. */
 function updateLocalStorage() {
   localStorage.setItem('moodBoardData', JSON.stringify(tempStorageObject));
 }
 
-// ? Function to load from local storage. This function will be called on page load.
+/* ? Function to load from local storage. This function will be called 
+ on page load. */
 function loadFromLocalStorage() {
   const storedData = JSON.parse(localStorage.getItem('moodBoardData'));
   if (storedData) {

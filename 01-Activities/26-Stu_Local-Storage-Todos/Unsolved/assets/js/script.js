@@ -32,7 +32,26 @@ function renderTodos() {
   }
 }
 
-// TODO: What is the purpose of the following function?
+
+/* The init() function is a convention, not a built-in JavaScript 
+function. It's a common practice among developers to create a 
+function named init to encapsulate initialization logic for a 
+particular script or application.
+
+Purpose of init()
+Centralized initialization: It groups all setup tasks in one 
+  place, making code more organized and maintainable.
+Delayed execution: It can be called after the DOM is fully loaded 
+  to ensure elements are available.
+Reusability: Can be called multiple times if needed.
+
+Common Use Cases:
+  Setting up event listeners
+  Fetching data from an API
+  Creating objects or data structures
+  Initializing variables or constants*/
+
+  // TODO: What is the purpose of the following function?
 // initial behavior of app, i.e. what happens at load
 function init() {
   // TODO: What is the purpose of the following line of code?
@@ -49,15 +68,20 @@ function init() {
   renderTodos();
 }
 
+// store todos locally
 function storeTodos() {
   // TODO: Describe the purpose of the following line of code.
   // change to-dos into a string and store them with the key we chose called "todos"
   localStorage.setItem('todos', JSON.stringify(todos));
 }
+
 // TODO: Describe the purpose of the following line of code.
 // add a submit action to the form
 todoForm.addEventListener('submit', function (event) {
-  event.preventDefault(); //prevents the default action i.e. prevents file from reloading and erasing all data
+  /* prevents the default action i.e. prevents file from 
+  reloading and erasing all data */
+  event.preventDefault(); 
+  
   const todoText = todoInput.value.trim();
   // TODO: Describe the functionality of the following `if` statement.
   // if the to-do text is an empty string, leave the function (return)
